@@ -1,0 +1,238 @@
+.upToTheMintNight {
+  //background: url("../../public/deerBackground.svg") no-repeat center;
+  padding: 125px 0;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+
+
+  //&::before {
+  //  content: '';
+  //  opacity: 20%;
+  //  backdrop-filter: blur(30px);
+  //  background-color: #000;
+  //  position: absolute;
+  //  width: 100%;
+  //  height: 100%;
+  //  top: 0;
+  //  left: 0;
+  //  bottom: 0;
+  //  right: 0;
+  //  z-index: 2;
+  //}
+
+  .upToTheMintContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+
+    .contentNight {
+      max-width: 834px;
+      height: 1250px;
+      cursor: pointer;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .contentText {
+        visibility: visible;
+        transition-delay: 5s;
+        -webkit-transition-delay: 5s;
+        -moz-transition-delay: 5s;
+        max-width: 465px;
+        padding-left: 0;
+        text-shadow: 2px 1px 1px #000;
+
+
+        li h4 {
+          font-size: 34px;
+          font-weight: 400;
+          line-height: 34px;
+          color: #fff;
+        }
+
+        li p {
+          font-size: 21px;
+          font-weight: 400;
+          line-height: 21px;
+          color: #fff;
+        }
+
+      }
+
+    }
+
+  }
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.block {
+  visibility: visible;
+}
+
+.upToTheMintDay {
+  //background: url("../../public/castleBackground.svg") no-repeat center;
+  width: 100%;
+  padding: 125px 0;
+  background-size: cover;
+  position: relative;
+
+  //&::before {
+  //  content: '';
+  //  opacity: 30%;
+  //  backdrop-filter: blur(30px);
+  //  background-color: #000;
+  //  position: absolute;
+  //  width: 100%;
+  //  height: 100%;
+  //  top: 0;
+  //  left: 0;
+  //  bottom: 0;
+  //  right: 0;
+  //  z-index: 2;
+  //}
+
+  .upToTheMintContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+
+    .contentDay {
+      max-width: 834px;
+      height: 1250px;
+      z-index: 10;
+      width: 100%;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .contentText {
+        max-width: 465px;
+        padding-left: 0;
+        text-shadow: 2px 1px 1px #000;
+        visibility: visible;
+        transition-delay:5s;
+        -webkit-transition-delay: 5s;
+        -moz-transition-delay: 5s;
+
+        li h4 {
+          font-size: 34px;
+          font-weight: 400;
+          line-height: 34px;
+          color: #fff;
+        }
+
+        li p {
+          font-size: 21px;
+          font-weight: 400;
+          line-height: 21px;
+          color: #fff;
+        }
+
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .upToTheMintDay,
+  .upToTheMintNight {
+    padding: 60px 0 100px 0;
+
+  }
+  .video {
+    display: none;
+  }
+
+  .contentNight {
+    background: url("../../public/scrollNightMob.webp") no-repeat center !important;
+    min-height: 721px !important;
+    margin-top: unset !important;
+    height: unset !important;
+    min-width: 400px !important;
+  }
+
+  .contentDay {
+    background: url("../../public/scrollDayMob.webp") no-repeat center !important;
+    min-height: 721px !important;
+    margin-top: unset !important;
+    height: unset !important;
+    min-width: 400px !important;
+
+    .contentText p {
+      color: #000 !important;
+      text-shadow: none;
+    }
+  }
+
+  .contentText {
+    max-width: 260px !important;
+    transition-delay:0.3s !important;
+    -webkit-transition-delay: 0.3s !important;
+    -moz-transition-delay: 0.3s !important;
+
+
+    h4 {
+      font-size: 16px !important;
+      line-height: 16px !important;
+    }
+
+    p {
+      font-size: 10px !important;
+      line-height: 16px !important;
+
+    }
+  }
+
+}
+
+.swiperNavPrevRef {
+  background-image: url('../../public/arrowLeft.svg');
+  left: 20%;
+  @media (max-width: 1199.98px) {
+    left: 0;
+
+  }
+}
+
+.swiperNavNextRef {
+  background-image: url('../../public/arrowRight.svg');
+  right: 20%;
+  position: relative;
+  @media (max-width: 1199.98px) {
+    right: 0;
+
+  }
+}
+
+.swiperNavPrevRef,
+.swiperNavNextRef {
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  width: 75px;
+  height: 75px;
+  z-index: 1;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+  @media (max-width: 767.98px) {
+    width: 40px;
+    height: 40px;
+
+  }
+
+
+}

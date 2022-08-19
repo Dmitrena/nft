@@ -1,0 +1,266 @@
+@font-face {
+  font-family: 'America XIX';
+  src: url('../public/fonts/am_xix.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'America XIX';
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+  padding: 0;
+}
+
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+*::-webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url('../public/21.jpg') no-repeat;
+  background-size: cover;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  //border: 2px solid red;
+  min-height: 100%;
+
+  &.fix {
+    display: flex;
+    align-items: center;
+
+  }
+}
+
+
+//video {
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 100%;
+//  height: 100%;
+//  object-fit: cover;
+//  z-index: -1;
+//  outline: none;
+//}
+
+
+//@media (min-aspect-ratio: 16/9) {
+//  .video-foreground { height: 200%; top: -50%; }
+//}
+//@media (max-aspect-ratio: 16/9) {
+//  .video-foreground { width: 200%; left: -50%; }
+//}
+//.swiper-button-prev {
+//  background-image: url('../public/arrowLeft.svg');
+//  background-repeat: no-repeat;
+//  background-size: contain;
+//  background-position: center;
+//  left: 50% !important;
+//
+//
+//
+//}
+//
+//.swiper-button-next {
+//  background-image: url('../public/arrowRight.svg');
+//  background-repeat: no-repeat;
+//  background-size: contain;
+//  background-position: center;
+//  left: 96%;
+//}
+
+.swiper {
+  margin-left: unset !important;
+  margin-right: unset !important;
+}
+
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.fp-watermark {
+  display: none !important;
+}
+
+.row-direction {
+  flex-direction: row !important;
+}
+
+//#fp-nav {
+//  position: fixed !important;
+//  right: 5% !important;
+//  z-index: 99 !important;
+//}
+//
+//#fp-nav ul li a {
+//  text-transform: uppercase;
+//  opacity: 60%;
+//  cursor: pointer;
+//  font-size: 18px;
+//  font-weight: 400;
+//  line-height: 18px;
+//  color: #fff;
+//}
+//
+//#fp-nav ul li:last-child {
+//  display: none;
+//
+//
+//}
+//
+//
+//#fp-nav ul li a span {
+//  &::after {
+//    content: 'Page2';
+//    position: absolute;
+//  }
+//}
+//
+//#fp-nav ul li:nth-of-type(2) a span {
+//  &::after {
+//    content: 'Page3';
+//    position: absolute;
+//  }
+//}
+//
+//#fp-nav ul li:nth-of-type(3) a span {
+//  &::after {
+//    content: 'Page4';
+//    position: absolute;
+//  }
+//}
+//
+//#fp-nav ul li:nth-of-type(4) a span {
+//  &::after {
+//    content: 'Page5';
+//    position: absolute;
+//  }
+//}
+//
+//#fp-nav ul li:nth-of-type(5) a span {
+//  &::after {
+//    content: 'Page6';
+//    position: absolute;
+//  }
+//}
+//
+//#fp-nav ul li:nth-of-type(6) a span {
+//  &::after {
+//    content: 'Page7';
+//    position: absolute;
+//  }
+//}
+//
+//#fp-nav ul li a.active span {
+//  margin: 0 0 0 0 !important;
+//}
+//
+//#fp-nav ul li a span:last-child {
+//  background-color: transparent;
+//
+//}
+//
+//#fp-nav ul li {
+//  transform: rotate(90deg);
+//  padding: 50px 0 50px 0 !important;
+//  position: relative;
+//
+//
+//  &:not(:last-child)::before {
+//    content: "";
+//    position: absolute;
+//    margin-left: 70px;
+//    top: 35%;
+//    width: 42px;
+//    height: 42px;
+//    background: url('/rhombus.svg') center/100% auto no-repeat;
+//  }
+//}
+
+@media screen and (max-width: 991.98px) {
+  #fp-nav {
+    display: none;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    position: absolute;
+    top: 80% !important;
+  }
+  .swiper-button-prev {
+    left: 0 !important;
+  }
+  .swiper-button-next {
+    right: 0 !important;
+  }
+
+
+}
+
+@media (max-width: 767.98px) {
+  .video-background-mobile {
+    //background: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -99;
+  }
+  .video-foreground-mobile,
+  .video-background-mobile iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+}
+
+
+

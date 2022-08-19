@@ -1,0 +1,169 @@
+.collectiveResponsibility {
+  padding: 147px 0 178px 0;
+  position: relative;
+  //background: url("../../public/блок-4-.webp") no-repeat center;
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+
+
+  &::before {
+    content: '';
+    //background-color: rgba(77, 1, 40, 0.5);
+    transition: background-color 1s ease-in-out;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+  .ellips1 {
+    background: rgba(1, 133, 255, 0.9);
+    filter: blur(1200px);
+    width: 850px;
+    height: 850px;
+    position: absolute;
+  }
+
+  .ellips2 {
+    background: rgba(174, 1, 255, 0.8);
+    filter: blur(800px);
+    width: 610px;
+    height: 610px;
+    position: absolute;
+    right: -368px;
+    bottom: -240px;
+  }
+
+  .ellips3 {
+    background: #DD76F9;
+    opacity: 0.4;
+    position: absolute;
+    filter: blur(600px);
+    transform: rotate(-46.76deg);
+    width: 772.77px;
+    height: 816.89px;
+    right: -368px;
+    bottom: -240px;
+  }
+
+  .title {
+    font-size: 46px;
+    font-weight: 400;
+    line-height: 46px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 8;
+    position: relative;
+    text-align: center;
+  }
+
+  .collectiveResponsibilityContainer {
+    background: none;
+    z-index: 6;
+    position: relative;
+    min-height: 100%;
+
+    .heroesList {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      padding: 120px 30px;
+      position: relative;
+      //perspective: 1000px;
+
+    }
+  }
+}
+
+.firstColor,
+.secondColor,
+.thirdColor,
+.fourthColor,
+.fifthColor,
+.sixthColor {
+  &::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    transition: background-color 1s ease-in-out;
+
+  }
+}
+
+.firstColor {
+  &::before {
+    background-color: rgba(0, 102, 221, 0.5);
+  }
+}
+
+.secondColor {
+  &::before {
+    background-color: rgba(96, 75, 58, 0.5);
+  }
+}
+
+.thirdColor {
+  &::before {
+    background-color: rgba(155, 1, 1, 0.5);
+  }
+}
+
+.fourthColor {
+  &::before {
+    background-color: rgba(124, 0, 88, 0.5);
+  }
+}
+
+.fifthColor {
+  &::before {
+    background-color: rgba(188, 176, 182, 0.5);
+  }
+}
+
+.sixthColor {
+  &::before {
+    background-color: rgba(0, 100, 0, 0.5);
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .heroesList {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (max-width: 991.98px) {
+  .heroesList {
+    display: none !important;
+  }
+
+  .collectiveResponsibilityContainer {
+    background: unset !important;
+  }
+
+
+}
+
+@media screen and (max-width: 575.98px) {
+  .title {
+    font-size: 36px !important;
+    margin-bottom: 40px !important;
+  }
+
+  .collectiveResponsibility {
+    padding: 80px 0 91px 0;
+  }
+
+}
